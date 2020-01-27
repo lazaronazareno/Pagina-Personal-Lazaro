@@ -29,7 +29,7 @@ class NameForm extends React.Component {
           Ideas:
           <input type="text" valor={this.state.value} onChange={this.handleChange} />
         </label> 
-        <input type="submit" valor="Submit"/>
+        <input type="submit" value="Submit"/>
       </form>
     );
   }
@@ -70,8 +70,11 @@ class App extends React.Component {
   return (
     <div className="App">
       <header className="App-header">
+        <div className="div">
       <img src={logo} className="App-logo" alt="logo"/>
-        <h1 className="App-logo" alt="logo">Lazaro</h1>
+      <img src={logo} className="App-logo" alt="logo"/>
+        </div>
+        <h1 className="App-logo" alt="logo">W</h1>       
         <p>
           <code>Lazaro Vega Sanchez</code>
         </p>
