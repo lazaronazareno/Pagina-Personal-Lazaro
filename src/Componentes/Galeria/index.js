@@ -1,16 +1,15 @@
 import React from 'react';
+import '../Galeria/styles.css';
+import Fotos from './Fotos';
 
 class Gallery extends React.Component {
     render(){
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-logo" alt="logo">Mireme convertirme en una galeria!!!!!</h1> 
-          <div>
+          <div className="contenedor" >
               <h1>Galeria</h1>
-
+              <Fotos/>
           </div>      
-        </header>
       </div>
     );
   }
