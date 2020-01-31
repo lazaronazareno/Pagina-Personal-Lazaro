@@ -1,19 +1,18 @@
 import React from 'react';
+import images from './Galeria/Fotos/index'
 import Gallery from './Galeria/index'
 import './Galeria/styles.css'
 
-class Inicio extends React.Component {
-    render(){
+
+function Inicio() {
+    
     return (
-      <div className="App">
-        <header className="App-header"> 
-        <div className="contenedor">      
-          <Gallery/>
-      </div>
-        </header>
+        <div className="contenedor">
+          <h1>Galeria</h1>      
+          <Gallery group={images}/>
       </div>
     );
   }
-  }
+  
   
   export default Inicio;

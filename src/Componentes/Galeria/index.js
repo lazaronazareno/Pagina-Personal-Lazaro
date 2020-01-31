@@ -1,18 +1,23 @@
 import React from 'react';
 import '../Galeria/styles.css';
-import Fotos from './Fotos';
+import images from './Fotos/index'
 
-class Gallery extends React.Component {
-    render(){
+
+function Gallery(){
+
     return (
-      <div className="App">
           <div className="contenedor" >
-              <h1>Galeria</h1>
-              <Fotos/>
+            {
+              images.map((images) => {
+                return <img key={images.index} title={images.title} className="logo" src={images.url} alt="img" />
+              })
+              
+
+            }
+            
           </div>      
-      </div>
     );
-  }
-  }
+
+}
   
   export default Gallery;
