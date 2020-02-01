@@ -1,20 +1,22 @@
 import React from 'react';
 import '../Galeria/styles.css';
-import images from './Fotos/index'
+import GalleryImage from './FuncionImagen';
 
 
-function Gallery(){
+function Gallery(props){
+  const handleClick = id => {
+    console.log(id);
+  }
 
     return (
           <div className="contenedor" >
             {
-              images.map((images) => {
-                return <img key={images.index} title={images.title} className="logo" src={images.url} alt="img" />
+              props.images.map((images) => {
+                return <GalleryImage key={images.id} src={images.url} title={images.title} onClick={handleClick} id={images.id}/>
               })
               
 
             }
-            
           </div>      
     );
 

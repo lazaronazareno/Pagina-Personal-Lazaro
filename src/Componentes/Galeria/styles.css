@@ -2,15 +2,7 @@
     background-color: red;
     width: 600px;
     height: 700px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  .logo{
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      padding: 0;
-  }
-  .contenedor-imagenes{
-      display: flex;
-      flex-wrap: wrap;
-  }

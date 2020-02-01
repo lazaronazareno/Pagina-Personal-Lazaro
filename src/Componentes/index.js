@@ -8,8 +8,8 @@ function Inicio() {
     
     return (
         <div className="contenedor">
-          <h1>Galeria</h1>      
-          <Gallery group={images}/>
+          <h1>Galeria</h1>     
+          <Gallery images={images}/>
       </div>
     );
   }
