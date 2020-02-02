@@ -1,0 +1,14 @@
+.dialog {
+    box-shadow: 0 8px 6px -6px black;
+    position: static;
+    left: 20%;
+    top: 10%;
+    background-color: black;
+    width: 400px;
+    height: 400px;
+  }
+.a{
+    background-color: black;
+    width: 400px;
+    height: 400px;
+}
