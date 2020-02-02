@@ -1,5 +1,7 @@
 import React from 'react';
 import './styles.css';
+import Slides from './Slides';
+import Description from './Description';
 
 class Modal extends React.Component {
 
@@ -16,12 +18,22 @@ class Modal extends React.Component {
 
       <img className="logo" src={this.props.src} onClick={this.handleModal} alt="" />
       {this.state.isOpen && (
-          <dialog className="dialog" style={{ position: "absolute" }}open onClick={this.handleModal}
+          <dialog className="dialog" open 
           >
-          <img src={this.props.src} onClick={this.handleModal} alt="nomostrar"
+          <img className="grande" src={this.props.src} alt="nomostrar"
             />
+
+            <button className="button-close" onClick={this.handleModal}>X</button>
+            <Description about={this.props.about}/>
+
+            <span className="indicador" ></span>
+            <span className="indicador" ></span>
+            <span className="indicador" ></span>
+
+
         </dialog>
       )}
+      
       </div>
   );
 }

@@ -10,43 +10,43 @@ const images = [
     {
         id:0,
         title:"cat1",
-        descripcion: "aslkdjkasjdlkajsdlkajlsdkjalsjdalsjdlkajd",
+        about: "Orange: Gatito de clase baja. No te confies o te hipnotizara",
         url:logo
     },
     {
         id:1,
         title:"cat2",
-        descripcion: "aslkdjkasjdlkajsdlkajlsdkjalsjdalsjdlkajd",
+        about: "Rayadito: Gatito Guerrero. Siempre alerta dispuesto a atacarte",
         url:logo1,
     },
     {
         id:2,
         title:"cat3",
-        descripcion: "aslkdjkasjdlkajsdlkajlsdkjalsjdalsjdlkajd",
+        about: "Savage: Gatito Facepalm. Siempre atento a los errores humanos",
         url:logo2,
     },
     {
         id:3,
         title:"cat4",
-        descripcion: "aslkdjkasjdlkajsdlkajlsdkjalsjdalsjdlkajd",
+        about: "Naranja: Gatito Jugueton. Frase favorita: 'Jugar significa sacar las uñas no?'",
         url:logo3,
     },
     {
         id:4,
         title:"cat5",
-        descripcion: "aslkdjkasjdlkajsdlkajlsdkjalsjdalsjdlkajd",
+        about: "Heart: Gatito mimoso. Se aprovecha de los demas con sus encantos",
         url:logo4,
     },
     {
         id:5,
         title:"cat6",
-        descripcion: "aslkdjkasjdlkajsdlkajlsdkjalsjdalsjdlkajd",
+        about: "Los Gemelos 'Blue': Gatitos Astutos. Podrán parecer inofensivos pero mientras uno ataca el otro esta buscando su siguiente presa",
         url:logo5,
     },
     {
         id:6,
         title:"cat7",
-        descripcion: "aslkdjkasjdlkajsdlkajlsdkjalsjdalsjdlkajd",
+        about: "Oruga: Gatito Perezoso: Que duerma todo el dia no lo hace menos peligroso",
         url:logo6,
     }
 ];
