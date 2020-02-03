@@ -25,6 +25,7 @@ class Modal extends React.Component {
 
             <button className="button-close" onClick={this.handleModal}>X</button>
             <Description about={this.props.about}/>
+            <Slides/>
 
             <span className="indicador" ></span>
             <span className="indicador" ></span>
