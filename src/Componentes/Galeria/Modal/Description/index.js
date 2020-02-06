@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Modal/styles.css';
+import '../../Modal/styles.module.scss';
 
 class Description extends React.Component{
     state = { isOpen: false };

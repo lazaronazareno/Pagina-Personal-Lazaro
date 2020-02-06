@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import styles from './styles.module.scss';
 
 
 class Slides extends React.Component {
@@ -30,8 +30,8 @@ class Slides extends React.Component {
     return (
       <div className="">
 
-        <a className="boton-atras" onClick={this.prevSlide} >&#10094;</a>
-        <a className="boton-sig" onClick={this.nextSlide} >&#10095;</a>
+        <a className={styles.botonAtras} onClick={this.prevSlide} >&#10094;</a>
+        <a className={styles.botonSig} onClick={this.nextSlide} >&#10095;</a>
       </div>
     );
 

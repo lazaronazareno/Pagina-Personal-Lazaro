@@ -1,13 +1,13 @@
 import React from 'react';
 import images from './Galeria/Fotos/index'
 import Gallery from './Galeria/index'
-import './Galeria/styles.css'
+import styles from './Galeria/styles.module.scss'
 
 
 function Inicio() {
     
     return (
-        <div className="contenedor">
+        <div className={styles.contenedor}>
           <h1>Galeria</h1>     
           <Gallery images={images}/>
       </div>
