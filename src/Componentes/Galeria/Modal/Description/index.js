@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Modal/styles.module.scss';
+import styles from '../../Modal/styles.module.scss';
 
 class Description extends React.Component{
     state = { isOpen: false };
@@ -12,11 +12,11 @@ class Description extends React.Component{
     render(){
         return(
             <div>
-                <button className="button-open" onClick={this.handleModal}>About</button>
+                <button className={styles.buttonOpen} onClick={this.handleModal}>About</button>
                 {this.state.isOpen && (
-                    <dialog className="dialog-desc" open 
+                    <dialog className={styles.dialogDesc} open 
                     >
-              <p className="desc" >{this.props.about}</p>
+              <p className={styles.desc} >{this.props.about}</p>
           </dialog>
       )}
 
