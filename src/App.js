@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Formulario from './Formulario /index'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    isOpen: false,
+    username: '',
+    password: ''
+  };
+
+  handleModal = () => {
+    this.setState({ isOpen: !this.state.isOpen });
+    console.log("click");
+    
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <Formulario title="Formulario" />
+        {this.state.isOpen && (
+          <dialog open>
+            <Formulario username={this.state.username} password={this.state.password} />
+          </dialog>
+        )}
+      </div>
+    );
+  }
 }
 
 export default App;
