@@ -14,11 +14,14 @@ class Slides extends React.Component {
   prevSlide = () => {
     this.setState(prevState => ({
       currentIndex: prevState.currentIndex - 1,
+      images: prevState.images 
     }));
+    
   }
   nextSlide = () => {
     this.setState(prevState => ({
       currentIndex: prevState.currentIndex + 1,
+      images: prevState.images
     }));
   }
   
