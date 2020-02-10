@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import styles from './styles.module.scss';
 import Slides from './Slides';
 import Description from './Description';
 
@@ -14,22 +14,22 @@ class Modal extends React.Component {
 
   render(){
   return (
-      <div className="Modal">
+      <div className={styles.Modal}>
 
-      <img className="logo" src={this.props.src} onClick={this.handleModal} alt="" />
+      <img className={styles.logo} src={this.props.src} onClick={this.handleModal} alt="" />
       {this.state.isOpen && (
-          <dialog className="dialog" open 
+          <dialog className={styles.dialog} open 
           >
-          <img className="grande" src={this.props.src} alt="nomostrar"
+          <img className={styles.grande} src={this.props.src} alt="nomostrar"
             />
 
-            <button className="button-close" onClick={this.handleModal}>X</button>
+            <button className={styles.buttonClose} onClick={this.handleModal}>X</button>
             <Description about={this.props.about}/>
-            <Slides/>
+            <Slides image={this.props.src} id={this.props.id} />
 
-            <span className="indicador" ></span>
-            <span className="indicador" ></span>
-            <span className="indicador" ></span>
+            <span className={styles.indicador} ></span>
+            <span className={styles.indicador} ></span>
+            <span className={styles.indicador} ></span>
 
 
         </dialog>

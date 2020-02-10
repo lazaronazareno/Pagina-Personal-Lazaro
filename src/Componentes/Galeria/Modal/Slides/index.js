@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import images from '../../Fotos';
 import GalleryImage from '../../FuncionImagen';
 
@@ -55,8 +56,50 @@ class Slides extends React.Component{
         );
       
       
+=======
+import styles from './styles.module.scss';
+
+
+class Slides extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      images: this.props,
+      currentIndex: this.props.id,
+>>>>>>> 7e5aa20afe0ca9f992e9c5a3844d71c279b47fa0
     }
+  }
+
+  prevSlide = () => {
+    this.setState(prevState => ({
+      currentIndex: prevState.currentIndex - 1,
+      images: prevState.images 
+    }));
+    
+  }
+  nextSlide = () => {
+    this.setState(prevState => ({
+      currentIndex: prevState.currentIndex + 1,
+      images: prevState.images
+    }));
+  }
   
+
+
+  render() {
+
+
+    return (
+      <div className="">
+
+        <a className={styles.botonAtras} onClick={this.prevSlide} >&#10094;</a>
+        <a className={styles.botonSig} onClick={this.nextSlide} >&#10095;</a>
+      </div>
+    );
+
+
+  }
+
 }
 
 export default Slides;

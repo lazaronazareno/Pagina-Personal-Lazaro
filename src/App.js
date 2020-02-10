@@ -1,11 +1,11 @@
 import React from 'react';
-import './App.css';
+import styles from './App.module.scss';
 import Inicio from './Componentes/index.js';
 
 class App extends React.Component {
   render(){
   return (
-    <div className="App">
+    <div className={styles.App}>
         <Inicio/>
 
     </div>
