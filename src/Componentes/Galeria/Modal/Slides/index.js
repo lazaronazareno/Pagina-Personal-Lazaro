@@ -7,7 +7,7 @@ class Slides extends React.Component{
     constructor(props) {
         super(props)
         this.state = {
-            images:[{images}],
+            image:[{images}],
             currentIndex:0,
             translateValue: 0
         }
