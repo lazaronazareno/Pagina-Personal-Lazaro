@@ -11,55 +11,55 @@ import logo8 from '../Fotos/imagen9.jpg'
 const images = [
     {
         id:0,
-        title:"cat1",
+        title:"section1",
         about: "Orange: Gatito de clase baja. No te confies o te hipnotizara",
         url:logo
     },
     {
         id:1,
-        title:"cat2",
+        title:"section2",
         about: "Rayadito: Gatito Guerrero. Siempre alerta dispuesto a atacarte",
         url:logo1,
     },
     {
         id:2,
-        title:"cat3",
+        title:"section3",
         about: "Savage: Gatito Facepalm. Siempre atento a los errores humanos",
         url:logo2,
     },
     {
         id:3,
-        title:"cat4",
+        title:"section4",
         about: "Naranja: Gatito Jugueton. Frase favorita: 'Jugar significa sacar las uñas no?'",
         url:logo3,
     },
     {
         id:4,
-        title:"cat5",
+        title:"section5",
         about: "Heart: Gatito mimoso. Se aprovecha de los demas con sus encantos",
         url:logo4,
     },
     {
         id:5,
-        title:"cat6",
+        title:"section6",
         about: "Los Gemelos 'Blue': Gatitos Astutos. Podrán parecer inofensivos pero mientras uno ataca el otro esta buscando su siguiente presa",
         url:logo5,
     },
     {
         id:6,
-        title:"cat7",
+        title:"section7",
         about: "Oruga: Gatito Perezoso: Que duerma todo el dia no lo hace menos peligroso",
         url:logo6,
     },
     {
         id:7,
-        title:"cat8",
+        title:"section8",
         about: "Oruga: Gatito Perezoso: Que duerma todo el dia no lo hace menos peligroso",
         url:logo7,
     },
     {
         id:8,
-        title:"cat9",
+        title:"section9",
         about: "Oruga: Gatito Perezoso: Que duerma todo el dia no lo hace menos peligroso",
         url:logo8,
     }

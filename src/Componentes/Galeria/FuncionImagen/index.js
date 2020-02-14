@@ -6,7 +6,7 @@ function GalleryImage(props){
 
     return( 
     <div className={styles.imagenes}>
-        <p>{props.title}</p>
+        <h1 className={styles.tituloInicio}>{props.title}</h1>
         <Modal src={props.src} about={props.about} id={props.id}/>
 
 

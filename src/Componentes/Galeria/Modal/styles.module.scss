@@ -3,29 +3,39 @@
     position: absolute;
     margin: 0;
     padding: 0%;
-    width: 500px;
-    height: 500px;
-    left: 20%;
-    top: 10%;
+    width: 1000px;
+    height: 600px;
+    left: 13%;
+    top: 9%;
+    z-index: 6;
 }
   .logo{
-    width: 200px;
+    position: relative;
+    width: 443px;
     height: 200px;
-    object-fit: cover;
     padding: 0;
+    margin: 2px;
+    transform: scale(1);
+    transition: transform 2s;
+    border-radius: 20px;
+
+    &:hover{
+      z-index:6;
+      transform: scale(1.4);
+
+    }
 }
 .grande{
-    width: 500px;
-    height: 500px;
-    object-fit:cover;
+    width: 1000px;
+    height: 600px;
+    object-fit:fill;
     border-radius: 40px;
-
 }
 .buttonClose{
   cursor: pointer;
-  position: relative;
-  bottom: 518px;
-    left: 243px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
   border-radius: 100px;
   width: 50px;
   height: 50px;
@@ -40,27 +50,48 @@
     margin: 0 2px;
     border-radius: 100%;
 }
-.buttonOpen{
+.divbuttonOpen{
   cursor: pointer;
-  position: relative;
-  right: 206px;
-  bottom: 104px;
-    border-radius: 30px;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 30px;
   width: 100px;
   height: 50px;
   background-color: lightgrey;
   border: none;
   z-index: 1;
 }
+.buttonOpen{
+  border-radius: 30px;
+  width: 100px;
+  height: 50px;
+  background-color: lightgrey;
+  border: none;
+  z-index: 1;
+  
+}
 .dialogDesc{
+  position: absolute;
   border-color: lightgrey;
   border-radius: 50px;
   width: 400px;
-  top: 421px;
-    left: 94px;
-  padding: 0;
-    margin: 0;
+  margin: 0;
+  z-index: 6;
+  background-color: lightgray;
+  bottom: 5px;
+  left: 100px;
 }
 .desc{
-  z-index: 1;
+  position: absolute;
+  z-index: 6;
+  bottom: -8px;
+}
+.Modal{
+  z-index: 5;
+}
+.tituloInicio{
+  position: absolute;
+  z-index: 5;
+  font-family: 'Rock Salt', cursive;
+
 }

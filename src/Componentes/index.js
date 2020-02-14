@@ -8,7 +8,7 @@ function Inicio() {
     
     return (
         <div className={styles.contenedor}>
-          <h1>Galeria</h1>     
+          <h1 className={styles.title}>¡Bienvenidos a mi Pagina Personal!</h1>     
           <Gallery images={images}/>
       </div>
     );

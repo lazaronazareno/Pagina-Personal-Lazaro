@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './styles.module.scss';
-import Slides from './Slides';
 import Description from './Description';
 
 class Modal extends React.Component {
@@ -25,13 +24,6 @@ class Modal extends React.Component {
 
             <button className={styles.buttonClose} onClick={this.handleModal}>X</button>
             <Description about={this.props.about}/>
-            <Slides image={this.props.src} id={this.props.id} />
-
-            <span className={styles.indicador} ></span>
-            <span className={styles.indicador} ></span>
-            <span className={styles.indicador} ></span>
-
-
         </dialog>
       )}
       

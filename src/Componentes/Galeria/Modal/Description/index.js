@@ -11,7 +11,7 @@ class Description extends React.Component{
 
     render(){
         return(
-            <div>
+            <div className={styles.divbuttonOpen}>
                 <button className={styles.buttonOpen} onClick={this.handleModal}>About</button>
                 {this.state.isOpen && (
                     <dialog className={styles.dialogDesc} open 
