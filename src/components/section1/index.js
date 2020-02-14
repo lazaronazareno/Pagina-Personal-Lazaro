@@ -1,10 +1,12 @@
 import React from 'react';
 import '../../styles/main.css';
 
-class SectionOne extends React.Component {
+class SectionOne extends React.Component {  
+
   render(){
     return (
-    <div className="zoom">
+    <div className="zoom" >
+      <h1>Inicio</h1>
     </div>
   );
 }

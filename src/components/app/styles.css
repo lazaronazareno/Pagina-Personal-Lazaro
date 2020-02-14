@@ -1,5 +1,7 @@
 .contenedor {
-  width: 1400px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
@@ -21,4 +23,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.div{
+  width: 500px;
+  height: 300px;
 }
