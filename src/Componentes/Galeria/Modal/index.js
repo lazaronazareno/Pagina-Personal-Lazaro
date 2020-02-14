@@ -14,12 +14,15 @@ class Modal extends React.Component {
   render(){
   return (
       <div className={styles.Modal}>
+        <div className={styles.contenedorTittle}>
+        <h1 className={styles.tituloInicio}>{this.props.title}</h1>
+        </div>
 
       <img className={styles.logo} src={this.props.src} onClick={this.handleModal} alt="" />
       {this.state.isOpen && (
           <dialog className={styles.dialog} open 
           >
-          <img className={styles.grande} src={this.props.src} alt="nomostrar"
+          <img onClick={this.handleModal} className={styles.grande} src={this.props.src} alt="nomostrar"
             />
 
             <button className={styles.buttonClose} onClick={this.handleModal}>X</button>

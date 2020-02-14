@@ -1,13 +1,22 @@
 .dialog {
     border: none;
-    position: absolute;
+    position: fixed;
+    display: flex;
     margin: 0;
     padding: 0%;
     width: 1000px;
     height: 600px;
-    left: 13%;
-    top: 9%;
-    z-index: 6;
+    top: 30px;
+    left: 120px;
+    z-index: 10;
+    border-radius: 40px;
+//   &:hover{
+//     background: black;
+//     width: 1400px;
+//     height: 1400px;
+//     top:0;
+//     left:0;
+//   }
 }
   .logo{
     position: relative;
@@ -51,7 +60,6 @@
     border-radius: 100%;
 }
 .divbuttonOpen{
-  cursor: pointer;
   position: absolute;
   bottom: 0px;
   border-radius: 30px;
@@ -62,6 +70,7 @@
   z-index: 1;
 }
 .buttonOpen{
+  cursor: pointer;
   border-radius: 30px;
   width: 100px;
   height: 50px;
@@ -87,11 +96,27 @@
   bottom: -8px;
 }
 .Modal{
-  z-index: 5;
+  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .tituloInicio{
   position: absolute;
   z-index: 5;
   font-family: 'Rock Salt', cursive;
+  margin:0;
 
+}
+.contenedorTittle{
+  height: 62px;
+  position: absolute;
+  width: 258px;
+  border: 2px #ff0000ad solid;
+  z-index: 5;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
