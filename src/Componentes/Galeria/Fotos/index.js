@@ -1,10 +1,12 @@
-import logo from  '../Fotos/cat1.jpg'
-import logo1 from '../Fotos/cat2.jpg'
-import logo2 from '../Fotos/cat3.jpg'
-import logo3 from '../Fotos/cat4.jpeg'
-import logo4 from '../Fotos/cat5.jpeg'
-import logo5 from '../Fotos/cat6.jpeg'
-import logo6 from '../Fotos/cat7.jpeg'
+import logo from  '../Fotos/imagen1.jpg'
+import logo1 from '../Fotos/imagen2.jpg'
+import logo2 from '../Fotos/imagen3.jpg'
+import logo3 from '../Fotos/imagen4.jpg'
+import logo4 from '../Fotos/imagen5.jpg'
+import logo5 from '../Fotos/imagen6.jpg'
+import logo6 from '../Fotos/imagen7.jpg'
+import logo7 from '../Fotos/imagen8.jpg'
+import logo8 from '../Fotos/imagen9.jpg'
 
 const images = [
     {
@@ -48,6 +50,18 @@ const images = [
         title:"cat7",
         about: "Oruga: Gatito Perezoso: Que duerma todo el dia no lo hace menos peligroso",
         url:logo6,
+    },
+    {
+        id:7,
+        title:"cat8",
+        about: "Oruga: Gatito Perezoso: Que duerma todo el dia no lo hace menos peligroso",
+        url:logo7,
+    },
+    {
+        id:8,
+        title:"cat9",
+        about: "Oruga: Gatito Perezoso: Que duerma todo el dia no lo hace menos peligroso",
+        url:logo8,
     }
 ];
 
