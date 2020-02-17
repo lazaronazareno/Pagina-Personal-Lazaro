@@ -24,6 +24,7 @@ class Modal extends React.Component {
           >
           <img onClick={this.handleModal} className={styles.grande} src={this.props.src} alt="nomostrar"
             />
+            <h1 className={styles.span}>{this.props.about}</h1>
 
             <button className={styles.buttonClose} onClick={this.handleModal}>X</button>
             <Description about={this.props.about}/>

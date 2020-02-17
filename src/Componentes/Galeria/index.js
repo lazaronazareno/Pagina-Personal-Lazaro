@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from '../Galeria/styles.module.scss';
-import GalleryImage from './FuncionImagen';
 import Modal from './Modal';
 
 
