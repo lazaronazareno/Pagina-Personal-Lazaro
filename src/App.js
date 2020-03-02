@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Provider } from './components/index'
 
-function App() {
+class App extends React.Component {
+  state = {
+    name: "",
+    setName: ({ value }) => this.setState({ name: value }),
+    apellido:"",
+    setApellido:({ value }) => this.setState({apellido: value}),
+  };
+
+render(){
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Provider value={this.state}>
+
+      </Provider>
     </div>
   );
+}
 }
 
 export default App;
